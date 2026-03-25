@@ -1,0 +1,30 @@
+2026-03-25 15:02:03,413 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 15:02:03,414 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 你好
+2026-03-25 15:02:23,136 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 15:02:23,137 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 我现在大二，我想转专业
+2026-03-25 15:02:26,502 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-25 15:02:26,503 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '内江师范学院转专业政策 大二学生'}
+2026-03-25 15:02:31,092 - agent - INFO - middleware.py:25 - [tool monitor]工具rag_summarize调用成功
+2026-03-25 15:02:32,070 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-25 15:02:32,070 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 根据参考资料，内江师范学院允许大二学生申请转专业，但需符合学校规定的具体条件和程序，包括但不限于学业成绩要求、转入专业名额限制及通过相关考核。具体政策以学校最新发布的官方文件为准。
+2026-03-25 15:03:09,753 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 15:03:09,754 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 给我一个转专业申请表模板
+2026-03-25 15:03:14,257 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-25 15:03:14,258 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '转专业申请表模板'}
+2026-03-25 15:03:18,371 - agent - INFO - middleware.py:25 - [tool monitor]工具rag_summarize调用成功
+2026-03-25 15:03:18,655 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-25 15:03:18,657 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 参考资料中未提供转专业申请表模板的具体内容或格式。
+2026-03-25 15:03:47,738 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 15:03:47,740 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 我想出去实习，能申请免修吗
+2026-03-25 15:03:50,147 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-25 15:03:50,149 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '实习 免修 申请'}
+2026-03-25 15:03:55,312 - agent - INFO - middleware.py:25 - [tool monitor]工具rag_summarize调用成功
+2026-03-25 15:03:55,907 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-25 15:03:55,907 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 实习免修申请需提交相关材料，经学院审核批准后方可免修相应课程。具体流程和要求以学校或学院发布的相关规定为准。
+2026-03-25 15:04:31,236 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 15:04:31,238 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 查找数学学院相关规定
+2026-03-25 15:04:33,537 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-25 15:04:33,538 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '数学学院相关规定'}
+2026-03-25 15:04:36,283 - agent - INFO - middleware.py:25 - [tool monitor]工具rag_summarize调用成功
+2026-03-25 15:04:36,570 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-25 15:04:36,571 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 参考资料中未提供关于数学学院相关规定的具体内容。
