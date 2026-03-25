@@ -6,7 +6,7 @@ import streamlit as st
 from agent.react_agent import ReactAgent
 
 # 标题
-st.title("内江师范学院智能助手")
+st.title("内江师范学院智能助手Demo")
 st.divider()
 
 if "agent" not in st.session_state:
