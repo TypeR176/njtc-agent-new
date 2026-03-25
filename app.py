@@ -1,5 +1,6 @@
-import streamlit as st
-from agent.react_agent import ReactAgent
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent))
 import time
 
 # 标题
