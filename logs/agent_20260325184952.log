@@ -1,0 +1,50 @@
+2026-03-25 18:50:29,657 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 18:50:29,658 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 今天天气如何
+2026-03-25 18:50:33,725 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-03-25 18:50:33,726 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-25 18:50:33,727 - agent - INFO - middleware.py:25 - [tool monitor]工具get_user_location调用成功
+2026-03-25 18:50:33,765 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-25 18:50:33,766 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 内江
+2026-03-25 18:50:37,457 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-03-25 18:50:37,458 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '内江'}
+2026-03-25 18:50:37,459 - agent - ERROR - middleware.py:32 - 工具Pget_weather调用失败，原因：Weather.get_weather_data() missing 1 required positional argument: 'city'
+2026-03-25 18:52:17,809 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 18:52:17,809 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 今天天气如何
+2026-03-25 18:52:22,410 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-03-25 18:52:22,410 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-25 18:52:22,411 - agent - INFO - middleware.py:25 - [tool monitor]工具get_user_location调用成功
+2026-03-25 18:52:22,452 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-25 18:52:22,453 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 内江
+2026-03-25 18:52:27,170 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-03-25 18:52:27,171 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '内江'}
+2026-03-25 18:52:28,407 - agent - INFO - middleware.py:25 - [tool monitor]工具get_weather调用成功
+2026-03-25 18:52:29,431 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-25 18:52:29,431 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 城市：内江市
+天气：阴
+当前温度：19℃
+体感温度：None℃
+湿度：63%
+风向：东风
+风力：2级
+空气质量：None
+更新时间：2026-03-25 18:40:19
+2026-03-25 19:03:23,730 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-25 19:03:23,732 - agent - DEBUG - middleware.py:45 - [log_before_model]HumanMessage | 今天天气怎么样
+2026-03-25 19:03:28,047 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-03-25 19:03:28,047 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-25 19:03:28,266 - agent - INFO - middleware.py:25 - [tool monitor]工具get_user_location调用成功
+2026-03-25 19:03:28,301 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-25 19:03:28,302 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 内江
+2026-03-25 19:03:34,142 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-03-25 19:03:34,143 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '内江'}
+2026-03-25 19:03:34,326 - agent - INFO - middleware.py:25 - [tool monitor]工具get_weather调用成功
+2026-03-25 19:03:35,337 - agent - INFO - middleware.py:41 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-25 19:03:35,338 - agent - DEBUG - middleware.py:45 - [log_before_model]ToolMessage | 城市：内江市
+天气：阴
+当前温度：19℃
+体感温度：None℃
+湿度：63%
+风向：东风
+风力：2级
+空气质量：None
+更新时间：2026-03-25 18:40:19

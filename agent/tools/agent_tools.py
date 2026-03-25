@@ -1,12 +1,14 @@
 from langchain_core.tools import tool
 from rag.rag_service import RagSummarizeService
 import random
-from utils.config_handler import agent_conf
-from utils.logger_hander import logger
-from utils.path_tool import get_abs_path
-import os
+from api.weather import Weather
+from api.location import Location
+from api.hotboard import HotBoard
 
 rag = RagSummarizeService()
+weather = Weather()
+location = Location()
+hotboard = HotBoard()
 
 user_ids = ["1001", "1002", "1003", "1004", "1005", "1006", "1007", "1008"]
 month_arr = ["2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08",
@@ -28,14 +30,18 @@ def get_user_name() -> str:
 def get_current_month() -> str:
     return random.choice(month_arr)
 
-@tool(description="获取指定城市的天气，以消息字符串的形式返回")
+@tool(description="获取指定城市的天气，传入city城市名字，以纯字符串的形式返回")
 def get_weather(city: str) -> str:
-    return f"城市{city}天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低"
+    return weather.get_weather_data(city)
 
 @tool(description="获取用户所在城市的名称，以纯字符串形式返回")
 def get_user_location() -> str:
-    return "内江"
+    return location.get_user_location()
 
 @tool(description="获取用户的ID，以纯字符串形式返回")
 def get_user_id() -> str:
     return random.choice(user_ids)
+
+@tool(description="获取实时热点信息")
+def get_hotboard() -> str:
+    return hotboard.get_hotboard()
