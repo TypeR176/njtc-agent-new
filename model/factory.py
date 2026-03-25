@@ -5,6 +5,7 @@ from langchain_core.language_models import BaseChatModel
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.chat_models.tongyi import ChatTongyi
 from utils.config_handler import rag_conf
+from os import getenv
 
 class BaseModelFactory(ABC):
     @abstractmethod
@@ -13,7 +14,10 @@ class BaseModelFactory(ABC):
 
 class ChatModelFactory(BaseModelFactory):
     def generator(self) -> Optional[Embeddings | BaseChatModel]:
-        return ChatTongyi(model=rag_conf['chat_model_name'])
+        return ChatTongyi(
+            model=rag_conf['chat_model_name'],
+            dashscope_api_key=getenv("DASHSCOPE_API_KEY")  # 从环境变量读取密钥
+        )
 
 class EmbeddingsFactory(BaseModelFactory):
     def generator(self) -> Optional[Embeddings | BaseChatModel]:
