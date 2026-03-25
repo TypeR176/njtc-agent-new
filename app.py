@@ -4,7 +4,8 @@ sys.path.append(str(Path(__file__).parent))
 import time
 
 # 标题
-st.title("内江师范学院学生智能助手")
+st.title("Student AI Assistant")
+st.subheader("内江师范学院智能助手")
 st.divider()
 
 if "agent" not in st.session_state:
