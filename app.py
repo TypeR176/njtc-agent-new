@@ -2,10 +2,11 @@ import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent))
 import time
+import streamlit as st
+from agent.react_agent import ReactAgent
 
 # 标题
-st.title("Student AI Assistant")
-st.subheader("内江师范学院智能助手")
+st.title("内江师范学院智能助手")
 st.divider()
 
 if "agent" not in st.session_state:
