@@ -3,4 +3,4 @@ langchain
 openai
 python-dotenv
 requests
-uapi
+uapi-sdk-python
